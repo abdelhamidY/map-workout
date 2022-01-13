@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="edit.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="workout">
+      <form class="hidden">
+        <div class="flex-div">
+          <label for="">Type</label>
+          <select name="" id="" class="form-input options">
+            <option value="running">Running</option>
+            <option value="cycling">Cycling</option>
+          </select>
+        </div>
+        <div class="flex-div">
+          <label for="">Distance</label>
+          <input type="text" class="form-input distance" placeholder="km" />
+        </div>
+        <div class="flex-div">
+          <label for="">Duration</label>
+          <input type="text" class="form-input duration" placeholder="min" />
+        </div>
+        <div class="flex-div">
+          <label for="">Cadence</label>
+          <input
+            type="text"
+            class="form-input cadence"
+            placeholder="step/min"
+          />
+        </div>
+        <div class="flex-div hidden-inp">
+          <label for="">Elev Gain</label>
+          <input type="text" class="form-input elevent" placeholder="meters" />
+        </div>
+      </form>
+      <div class="list">
+        <!-- <div class="test">
+          <h3>cycling on <span>october</span></h3>
+          <ul>
+            <li>🏃‍♂️5 <span>km</span></li>
+            <li>⏱20 <span>min</span></li>
+            <li>⚡2 <span>km</span></li>
+            <li>🦶🏼8<span>spm</span></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>
